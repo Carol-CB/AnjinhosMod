@@ -1,0 +1,35 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/options.rpy", line 163, in script
+    init python:
+  File "game/options.rpy", line 163, in script
+    init python:
+  File "game/options.rpy", line 192, in <module>
+    buil.classify("game/**", "archive")
+NameError: name 'buil' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\carol\Desktop\renpy-8.2.1-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\carol\Desktop\renpy-8.2.1-sdk\renpy\main.py", line 526, in main
+    renpy.game.context().run(node)
+  File "game/options.rpy", line 163, in script
+    init python:
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "game/options.rpy", line 163, in script
+    init python:
+  File "C:\Users\carol\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\carol\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/options.rpy", line 192, in <module>
+    buil.classify("game/**", "archive")
+NameError: name 'buil' is not defined
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.2.1.24030407
+Anjinhos 1.0
+Mon Aug 12 09:30:10 2024

@@ -1,32 +1,33 @@
-2024-08-12 12:41:06 UTC
+2024-09-14 22:38:24 UTC
 Windows-10-10.0.22621
 Ren'Py 8.2.1.24030407
 
-Early init took 0.08s
-Loading error handling took 0.15s
-Loading script took 2.16s
-Loading save slot metadata took 0.04s
+Early init took 0.23s
+Loading error handling took 0.62s
+Loading script took 8.70s
+Loading save slot metadata took 0.30s
 Loading persistent took 0.00s
-Running init code took 0.16s
+ - Init at renpy/common/00library.rpy:429 took 0.34078 s.
+Running init code took 0.69s
 Loading analysis data took 0.00s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.04s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.07s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\carol\\AppData\\Roaming/RenPy/backups\\Anjinhos':
-Dump and make backups took 0.05s
+Backing up script files to 'C:\\Users\\carol\\AppData\\Roaming/RenPy/backups\\Cidadaos do futuro':
+Dump and make backups took 0.29s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.18s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
+Init translation took 0.25s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.04s
-Prepare screens took 0.27s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.03s
+Analyze screens took 0.19s
+Save screen analysis took 0.16s
+Prepare screens took 0.95s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.19s

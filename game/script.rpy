@@ -19,6 +19,8 @@ image final_2_estrelas = im.Scale("imagens/pontuacoes/duas.png", 1920, 1180)
 image final_1_estrelas = im.Scale("imagens/pontuacoes/uma.png", 1920, 1180)
 image final_0_estrelas = im.Scale("imagens/pontuacoes/zero.png", 1920, 1180)
 
+image creditos = "creditos.png"
+
 ####### Imagens de fundo ########
 image fachada = im.Scale("imagens/cenarios/fachada.png", 1920, 1180)
 image porta = im.Scale("imagens/cenarios/porta.png", 1920, 1180)
@@ -103,10 +105,10 @@ label start:
 
     show yuri feliz
     voice "audio/vozes/yuri/yuri1.mp3"
-    yuri "Olá!" 
+    yuri "Olá! / (Para passar o diálogo clique na tela!)" 
 
     voice "audio/vozes/yuri/yuri2.mp3"
-    yuri "Eu sou o Yuri! Eu estudo na Escola de Ensino Fundamental Ruth Rocha. Hoje, vou aprender algo muito importante sobre como resolver conflitos de um jeito gentil e respeitoso. Vamos nessa?"
+    yuri "Eu sou o Yuri! Eu estudo na Escola de Ensino Fundamental Ruth Rocha. Hoje, vou aprender algo muito importante sobre como resolver conflitos de um jeito gentil e respeitoso. Vamos nessa? / (Para selecionar a opção a seguir clique nela!)"
     
     menu:
         "Começar!":
@@ -1179,5 +1181,6 @@ label conclusao_episodio:
         scene final_0_estrelas with dissolve
         voice "audio/vozes/narradora/narradora30.mp3"
         narradora "Infelizmente, hoje suas escolhas não foram as melhores, jogador. Yuri terá que pensar um pouco sobre suas atitudes e tentar fazer melhor da próxima vez. Tente também! Aqui está sua pontuação final."
-    
+    scene creditos with dissolve
+    pause 10
     return

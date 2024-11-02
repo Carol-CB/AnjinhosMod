@@ -92,7 +92,7 @@ define gui.title_text_size = 75
 ## Menus principal e de jogos ##################################################
 
 ## As imagens usadas nos menus principal e de jogo.
-image menuv = Movie(channel="movie_dp", play = "gui/abertura.webm") 
+image menuv = Movie(channel="movie_dp", play = "gui/Anjinhos.webm") 
 define gui.main_menu_background = "menuv"
 define gui.game_menu_background = im.Scale("gui/menujogo.jpg", 1920, 1180)
 

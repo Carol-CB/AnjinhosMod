@@ -12,7 +12,7 @@
 ##
 ## O _() ao redor da string a marca como elegível para tradução.
 
-define config.name = _("Cidadãos do Futuro")
+define config.name = _("Anjinhos")
 
 
 ## Determina se o título fornecido acima será mostrado na tela do menu
@@ -145,7 +145,7 @@ default preferences.afm_time = 15
 ## Isso geralmente não deve ser alterado e, se for, deve ser sempre uma string
 ## literal, não uma expressão.
 
-define config.save_directory = "CidadaosDoFuturo-1718211424"
+define config.save_directory = "Anjinhos-1718211424"
 
 
 ## Ícone #######################################################################

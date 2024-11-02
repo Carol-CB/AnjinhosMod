@@ -19,6 +19,8 @@ image final_2_estrelas = im.Scale("imagens/pontuacoes/duas.png", 1920, 1180)
 image final_1_estrelas = im.Scale("imagens/pontuacoes/uma.png", 1920, 1180)
 image final_0_estrelas = im.Scale("imagens/pontuacoes/zero.png", 1920, 1180)
 
+image creditos = "creditos.png"
+
 ####### Imagens de fundo ########
 image fachada = im.Scale("imagens/cenarios/fachada.png", 1920, 1180)
 image porta = im.Scale("imagens/cenarios/porta.png", 1920, 1180)
@@ -103,11 +105,12 @@ label start:
 
     show yuri feliz
     voice "audio/vozes/yuri/yuri1.mp3"
-    yuri "Olá!" 
+    yuri "Olá! / (Para passar o diálogo clique na tela!)" 
 
     voice "audio/vozes/yuri/yuri2.mp3"
-    yuri "Eu sou o Yuri! Eu estudo na Escola de Ensino Fundamental Ruth Rocha. Hoje, vou aprender algo muito importante sobre como resolver conflitos de um jeito gentil e respeitoso. Vamos nessa?"
+    yuri "Eu sou o Yuri! Eu estudo na Escola de Ensino Fundamental Ruth Rocha. Hoje, vou aprender algo muito importante sobre como resolver conflitos de um jeito gentil e respeitoso. Vamos nessa? / (Para selecionar a opção a seguir clique nela!)"
     
+    play sound "audio/efeitos/menu1.mp3"
     menu:
         "Começar!":
             jump entrada
@@ -149,17 +152,20 @@ label entrada:
     voice "audio/vozes/yuri/yuri8.mp3"
     yuri "O que será que devo fazer?"
 
-    menu:
-        "Oi, Léo, por que você e a Ana estão brigando? Podemos resolver isso!":
-            play sound "audio/efeitos/certo.mp3"
-            jump leo_ana1
-        "Pare de gritar, Léo! Não seja mal educado.":
-            play sound "audio/efeitos/errado.mp3"
-            $ estrelas -= 1
-            jump leo_ana2
-        "Ana, você está bem? Léo, vamos conversar sobre isso.":
-            play sound "audio/efeitos/certo.mp3"
-            jump leo_ana3
+
+play sound "audio/efeitos/menu2.mp3" loop
+menu:
+    "Oi, Léo, por que você e a Ana estão brigando? Podemos resolver isso!":
+        play sound "audio/efeitos/certo.mp3"
+        jump leo_ana1
+    "Pare de gritar, Léo! Não seja mal educado.":
+        play sound "audio/efeitos/errado.mp3"
+        $ estrelas -= 1
+        jump leo_ana2
+    "Ana, você está bem? Léo, vamos conversar sobre isso.":
+        play sound "audio/efeitos/certo.mp3"
+        jump leo_ana3
+
 
 label leo_ana1:
     show yuri triste
@@ -459,6 +465,7 @@ label intervalo:
     voice "audio/vozes/yuri/yuri28.mp3"
     yuri "O que será que devo fazer?"
 
+    play sound "audio/efeitos/menu3.mp3" loop
     menu:
         "Bia, por que o Pedro não pode brincar com a gente? Todos devem participar!":
             play sound "audio/efeitos/certo.mp3"
@@ -870,8 +877,9 @@ label atividade_grupo:
     voice "audio/vozes/narradora/narradora14.mp3"
     narradora "(Miguel parece querer dizer algo, mas acaba sendo interrompido todas as vezes que tenta falar. Yuri percebe isso. O que ele deve fazer?)"
 
+    play sound "audio/efeitos/menu4.mp3" loop
     menu:
-        "Ei, pessoal, vamos ouvir o Miguel tem a dizer. Ele parece ter uma ideia!":
+        "Ei, pessoal, vamos ouvir o que o Miguel tem a dizer. Ele parece ter uma ideia!":
             play sound "audio/efeitos/certo.mp3"
             jump miguel_mariana_aisha1
         "Miguel, você pode me contar sua ideia e eu falo para o grupo. Já que você não consegue nem falar aparentemente!":
@@ -1179,5 +1187,6 @@ label conclusao_episodio:
         scene final_0_estrelas with dissolve
         voice "audio/vozes/narradora/narradora30.mp3"
         narradora "Infelizmente, hoje suas escolhas não foram as melhores, jogador. Yuri terá que pensar um pouco sobre suas atitudes e tentar fazer melhor da próxima vez. Tente também! Aqui está sua pontuação final."
-    
+    scene creditos with dissolve
+    pause 10
     return

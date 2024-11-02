@@ -61,7 +61,7 @@ define gui.interface_text_color = '#1e0024'
 ## Fontes e tamanhos de fonte ##################################################
 
 ## A fonte usada para o texto do jogo.
-define gui.text_font = "gui/fontes/Nexa-Heavy.ttf"
+define gui.text_font = "gui/fontes/LEMONMILK-Regular.otf"
 
 ## A fonte usada para os nomes dos caracteres.
 define gui.name_text_font = "gui/fontes/Baby Doll.otf"
@@ -70,7 +70,7 @@ define gui.name_text_font = "gui/fontes/Baby Doll.otf"
 define gui.interface_text_font = "gui/fontes/Nexa-Heavy.ttf"
 
 ## O tamanho do texto normal do diálogo.
-define gui.text_size = 35
+define gui.text_size = 26
 
 ## O tamanho dos nomes dos caracteres.
 define gui.name_text_size = 70
